@@ -7,7 +7,7 @@
  cI the size of the confidence interval default is 0.95
 
  for regression my.reg <- lm(y ~ x1 + x2 + x3 + x4, data = data)  
- the KR confidence interval for teh parameters associate with ratio $\beta_3$ / $\beta_2$ is
+ the KR confidence interval for teh parameters associate with ratio `$\beta_3$` / `$\beta_2$` is
  krCI(mean = my.reg$coefficients, 
         vcm = vcov(my.reg), 
         num = 3, dem = 2, 
