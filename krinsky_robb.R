@@ -32,7 +32,7 @@ krCI <- function(mean, vcm, num, dem, draws, ci = 0.95){
   }
   gamma <- sort(gamma)
   lb <- round(xci/2*draws)
-  ub <- round(1-(xci/2)*draws)
+  ub <- round(draws-(xci/2)*draws)
   ci <- c(gamma[lb], gamma[ub])
   return(list(ci, gamma))
   
